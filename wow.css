@@ -521,6 +521,11 @@ button.selecionado{
 
 @media (max-width: 768px){
 
+    *{
+        animation: none !important;
+        trasition: none !important;
+    }
+
     .countries{
         background:  rgb(21, 21, 21) !important;
     }
