@@ -427,6 +427,10 @@ button.selecionado{
         gap: 15px;
         flex-wrap: wrap;
         height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center !important;
+        align-items: center !important;
     }
 
     .tittle > img{
