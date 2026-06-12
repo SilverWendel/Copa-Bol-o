@@ -175,6 +175,10 @@ bra_btn.onclick = function(){
 
                 mar_jgs.style.display = "none";
 
+                bra_jgs.style.display = "flex";
+
+                void bra_jgs.offsetWidth;
+                
                 bra_jgs.style.animation = "left_in 1s ease forwards";
 
             }, 250);
