@@ -518,3 +518,28 @@ button.selecionado{
     }
 
 }
+
+@media (max-width: 768px){
+
+    .countries{
+        background: red !important;
+    }
+
+    .countries > button{
+        display: block !important;
+        width: 80px !important;
+        height: 80px !important;
+        border: 2px solid yellow !important;
+        background: blue !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    .countries > button > img{
+        display: block !important;
+        width: 80px !important;
+        height: 80px !important;
+        opacity: 1 !important;
+    }
+
+}
