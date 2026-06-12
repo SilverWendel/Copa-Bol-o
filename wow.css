@@ -471,6 +471,7 @@ button.selecionado{
     #jogosdomarrocos,
     #jogosdohaiti,
     #jogosdaescocia{
+        display: flex !important;
         height: auto !important;
         gap: 15px !important;
         padding-bottom: 20px !important;
