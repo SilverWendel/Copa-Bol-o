@@ -476,12 +476,6 @@ button.selecionado{
         padding-bottom: 20px !important;
     }
 
-    #jogosdomarrocos,
-    #jogosdohaiti,
-    #jogosdaescocia{
-        display: none !important;
-    }
-
 }
 
 /* Celulares pequenos */
