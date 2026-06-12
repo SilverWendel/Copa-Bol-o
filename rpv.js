@@ -1,7 +1,7 @@
-alert(
-    document.querySelector(".countries")
-);
-
+window.onload = () => {
+    conse.log("tudo carregado");
+}
+    
 const resultados = {
 
     brasil_marrocos: null,
