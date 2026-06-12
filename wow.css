@@ -391,6 +391,7 @@ button.selecionado{
     }
 
     .countries{
+        padding-top: 140px;
         gap: 15px;
         height: auto;
         padding: 90px 10px 20px 10px;
