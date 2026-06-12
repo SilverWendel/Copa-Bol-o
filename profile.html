@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa-Bolão</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="icon" type="image/x-icon" href="26.ico">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="">
+        <div class="vline"></div>
+        <a href="home.html"><h4 class="nav">Home</h4></a>
+        <a href="bolao.html"><h4 class="nav">Bolão</h4></a>
+        <a href="profile.html"><h4 class="nav">Perfil</h4></a>
+    </header>
+    <main>
+        <div class="topprof"><img src="profile.png" alt=""> <div id="infos"><div id="name"><h2>Meu perfil</h2><img id="rank" src="bronze.png" alt=""></div><div id="numbs"><h2><mark id="acertos">0</mark> Acertos</h2> <h2><mark id="erros">0</mark> Erros</h2> <h2><mark id="nao_palpitados">0</mark> Não palpitados</h2></div></div></div>
+        <div id="hline"></div>
+        <h2>-- Histórico de Bolões --</h2>
+        <div id="hist">
+            <div class="oddbox topo off" id="um" data-jogo="brasil_marrocos">
+                <h4>Brasil x Marrocos <strong id="s1">&#x29D7;</strong></h4>
+                <div class="match"><img src="brasil.png" alt=""> <h4>13/06 <br> 19:00</h4> <img src="marrocos.png" alt=""></div>
+                <div class="odd">
+                    <div class="option" data-opcao="1"><h4>1</h4></div>
+                    <div class="option" data-opcao="X"><h4>x</h4></div>
+                    <div class="option" data-opcao="2"><h4>2</h4></div>            
+                </div>
+            </div>
+            <div class="oddbox topo off" id="dois" data-jogo="haiti_escocia">
+                <h4>Haiti x Escócia <strong id="s2">&#x29D7;</strong></h4>
+                <div class="match"><img src="haiti.png" alt=""> <h4>13/06 <br> 22:00</h4> <img src="escocia.png" alt=""></div>
+                <div class="odd">
+                    <div class="option" data-opcao="1"><h4>1</h4></div>
+                    <div class="option" data-opcao="X"><h4>x</h4></div>
+                    <div class="option" data-opcao="2"><h4>2</h4></div>            
+                </div>
+            </div>
+            <div class="oddbox off" id="tres" data-jogo="escocia_marrocos">
+                <h4>Escócia x Marrocos <strong id="s3">&#x29D7;</strong></h4>
+                <div class="match"><img src="escocia.png" alt=""> <h4>19/06 <br> 19:00</h4> <img src="marrocos.png" alt=""></div>
+                <div class="odd">
+                    <div class="option" data-opcao="1"><h4>1</h4></div>
+                    <div class="option" data-opcao="X"><h4>x</h4></div>
+                    <div class="option" data-opcao="2"><h4>2</h4></div>            
+                </div>
+            </div>
+            <div class="oddbox off" id="quatro" data-jogo="brasil_haiti">
+                <h4>Brasil x Haiti <strong id="s4">&#x29D7;</strong></h4>
+                <div class="match"><img src="brasil.png" alt=""> <h4>19/06 <br> 21:30</h4> <img src="haiti.png" alt=""></div>
+                <div class="odd">
+                    <div class="option" data-opcao="1"><h4>1</h4></div>
+                    <div class="option" data-opcao="X"><h4>x</h4></div>
+                    <div class="option" data-opcao="2"><h4>2</h4></div>            
+                </div>
+            </div>
+            <div class="oddbox fundo off" id="cinco" data-jogo="escocia_brasil">
+                <h4>Escócia x Brasil <strong id="s5">&#x29D7;</strong></h4>
+                <div class="match"><img src="escocia.png" alt=""> <h4>24/06 <br> 19:00</h4> <img src="brasil.png" alt=""></div>
+                <div class="odd">
+                    <div class="option" data-opcao="1"><h4>1</h4></div>
+                    <div class="option" data-opcao="X"><h4>x</h4></div>
+                    <div class="option" data-opcao="2"><h4>2</h4></div>            
+                </div>
+            </div>
+            <div class="oddbox fundo off" id="seis" data-jogo="marrocos_haiti">
+                <h4>Marrocos x Haiti <strong id="s6">&#x29D7;</strong></h4>
+                <div class="match"><img src="marrocos.png" alt=""> <h4>24/06 <br> 19:00</h4> <img src="haiti.png" alt=""></div>
+                <div class="odd">
+                    <div class="option" data-opcao="1"><h4>1</h4></div>
+                    <div class="option" data-opcao="X"><h4>x</h4></div>
+                    <div class="option" data-opcao="2"><h4>2</h4></div>            
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="profile.js"></script>
+</body>
+</html>

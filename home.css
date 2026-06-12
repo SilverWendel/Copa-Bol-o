@@ -1,0 +1,405 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    box-shadow: 0px 5px 5px 0px rgba(255, 255, 255, 0.1);
+    z-index: 99999;
+    gap: 60px;
+}
+
+header > a > h4{
+    background: linear-gradient(90deg, rgb(199, 159, 68), rgb(249, 226, 137));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    background: linear-gradient(90deg, rgb(199, 159, 68), rgb(249, 226, 137));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header > img{
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.vline{
+    height: 30px;
+    width: 1px;
+    background-color: rgb(199, 159, 68);
+}
+
+h1{
+    position: relative;
+    background: linear-gradient(90deg, rgb(134, 122, 73), rgb(170, 147, 54));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(32px, 6vw, 80px);
+    top: 80px;
+    margin: 0;
+    margin-top: 80px;
+}
+
+main{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+main > div{
+    height: 800px;
+    width: min(700px, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+#trophy{
+    width: min(450px, 90vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    position: relative;
+    top: 10px;
+    right: 80px;
+    z-index: 2;
+}
+
+#trophy > img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(255, 221, 29, 0.4));
+}
+
+#intro{
+    height: 700px;
+    border-bottom: 2px solid rgb(225, 216, 196);
+    background-image: url("default.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 1px;
+}
+
+#downcont{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+}
+
+#downcont > img{
+    margin-top: 40px;
+    transition-duration: 0.2s;
+}
+
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(90deg, rgb(114, 91, 37), rgb(159, 145, 87));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cont{
+    align-content: flex-start;
+    justify-content: flex-start;
+    width: min(700px, 90%);
+    flex-direction: column;
+}
+
+#cont2{
+    align-content: flex-start;
+    justify-content: flex-start;
+    width: min(700px, 90%);
+    flex-direction: column;
+}
+
+h2{
+    position: relative;
+    color: rgb(225, 216, 196);
+    font-family: Arial, Helvetica, sans-serif;
+    top: 60px;
+}
+
+.banner{
+    background-image: url(banner.png);
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    background-position: center;
+    background-repeat: repeat-x;
+    animation: moveFlags 12s linear infinite;
+}
+
+@keyframes moveFlags{
+    from{
+        background-position: 0 0;
+    }
+
+    to{
+        background-position: -405.157px 0;
+    }
+}
+
+h3{
+    background: linear-gradient(90deg, rgb(199, 159, 68), rgb(249, 226, 137));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(24px, 4vw, 40px);
+}
+
+p{
+    color: rgb(225, 216, 196);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(15px, 2vw, 20px);
+    text-align: center;
+}
+
+footer > p{
+    font-size: 20px;
+    opacity: 50%;
+}
+
+.off{
+    transform: translateY(30px);
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.on{
+    transform: translate(0, 0);
+    opacity: 1;
+
+}
+
+
+/* ========================= */
+/* RESPONSIVIDADE GERAL */
+/* ========================= */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* ------------------------- */
+/* TABLETS */
+/* ------------------------- */
+
+@media (max-width: 1024px){
+
+    header{
+        gap: 30px;
+    }
+
+    #intro{
+        flex-direction: column;
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    #cont{
+        width: 90%;
+        text-align: center;
+        align-items: center;
+    }
+
+    h1{
+        position: static;
+        font-size: 60px;
+        margin-top: 0;
+    }
+
+    h2{
+        position: static;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #intro > div{
+        width: 100%;
+        height: auto;
+    }
+
+    #trophy{
+        width: 400px;
+        height: 400px;
+        left: 0;
+        bottom: 0;
+    }
+
+    .glow{
+        left: 50%;
+        top: 250px;
+    }
+
+    #downcont{
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    #downcont img{
+        width: 90%;
+        max-width: 700px;
+        height: auto;
+    }
+
+    p{
+        width: 90%;
+    }
+
+}
+
+/* ------------------------- */
+/* CELULARES */
+/* ------------------------- */
+
+@media (max-width: 768px){
+
+    header{
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    header > img{
+        width: 40px;
+    }
+
+    header h4{
+        font-size: 14px;
+    }
+
+    .vline{
+        display: none;
+    }
+
+    #intro{
+        padding-top: 120px;
+    }
+
+    h1{
+        font-size: 42px;
+        width: 100%;
+    }
+
+    h2{
+        font-size: 18px;
+        width: 100%;
+    }
+
+    #trophy{
+        width: 300px;
+        height: 300px;
+    }
+
+    .glow{
+        width: 180px;
+        height: 180px;
+        filter: blur(60px);
+        top: 180px;
+    }
+
+    h3{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    p{
+        width: 92%;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    footer{
+        padding: 10px;
+        height: auto;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+
+}
+
+/* ------------------------- */
+/* CELULARES PEQUENOS */
+/* ------------------------- */
+
+@media (max-width: 480px){
+
+    h1{
+        font-size: 32px;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+
+    h3{
+        font-size: 26px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    #trophy{
+        width: 240px;
+        height: 240px;
+    }
+
+    .glow{
+        width: 140px;
+        height: 140px;
+        filter: blur(50px);
+    }
+
+}
