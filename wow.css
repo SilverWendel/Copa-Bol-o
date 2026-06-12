@@ -526,7 +526,7 @@ button.selecionado{
     }
 
     .countries > button{
-        display: block !important;
+        display: flex !important;
         width: 80px !important;
         height: 80px !important;
         border: none !important;
