@@ -1,3 +1,7 @@
+alert(
+    document.querySelector(".countries")
+);
+
 const resultados = {
 
     brasil_marrocos: null,
