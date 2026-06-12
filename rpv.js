@@ -97,10 +97,6 @@ const mar_jgs = document.getElementById("jogosdomarrocos");
 const hai_jgs = document.getElementById("jogosdohaiti");
 const esc_jgs = document.getElementById("jogosdaescocia");
 
-mar_jgs.style.display = "none";
-hai_jgs.style.display = "none";
-esc_jgs.style.display = "none";
-
 let jatual = "b";
 
 const grupos = document.querySelectorAll(".odd");
