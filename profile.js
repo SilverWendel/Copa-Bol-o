@@ -14,8 +14,8 @@ console.log(palpites);
 
 const resultados = {
 
-    brasil_marrocos:  null,
-    haiti_escocia: null,
+    brasil_marrocos:  "X",
+    haiti_escocia: "2",
     escocia_marrocos: null,
     brasil_haiti: null,
     escocia_brasil: null,
