@@ -6,8 +6,8 @@ const resultados = {
 
     brasil_marrocos: "X",
     haiti_escocia: "2",
-    escocia_marrocos: null,
-    brasil_haiti: null,
+    escocia_marrocos: "2",
+    brasil_haiti: "1",
     escocia_brasil: null,
     marrocos_haiti: null
 
