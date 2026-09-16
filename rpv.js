@@ -8,8 +8,8 @@ const resultados = {
     haiti_escocia: "2",
     escocia_marrocos: "2",
     brasil_haiti: "1",
-    escocia_brasil: null,
-    marrocos_haiti: null
+    escocia_brasil: "2",
+    marrocos_haiti: "1"
 
 };
 
